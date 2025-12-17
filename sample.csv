@@ -1,0 +1,31 @@
+barangay_id,barangay_name,district,population_2020,classification,land_area_sq_km
+1,Carmen,1,77756,Urban,11.20
+2,Balulang,1,42205,Urban,10.50
+3,Kauswagan,1,39378,Urban,4.82
+4,Lapasan,2,38680,Urban,3.45
+5,Bulua,1,35167,Urban,6.10
+6,Camaman-an,2,28345,Urban,5.20
+7,Canitoan,1,25432,Urban,12.50
+8,Lumbia,1,24890,Rural,28.60
+9,Bugo,2,23560,Urban,8.75
+10,Gusa,2,22190,Urban,4.30
+11,Iponan,1,21890,Urban,14.20
+12,Tablon,2,20560,Urban,9.10
+13,Cugman,2,19870,Urban,7.40
+14,Macasandig,2,19230,Urban,6.80
+15,Macabalan,2,18950,Urban,1.20
+16,Agusan,2,17450,Urban,8.90
+17,Puntod,2,16890,Urban,1.10
+18,Patag,1,16230,Urban,2.30
+19,Indahag,2,15450,Rural,18.40
+20,Bayabas,1,14200,Urban,1.90
+21,Puerto,2,13560,Urban,3.20
+22,Pagatpat,1,12890,Rural,15.60
+23,Bonbon,1,11230,Urban,2.80
+24,Consolacion,2,10890,Urban,1.50
+25,Dansolihon,1,8900,Rural,45.20
+26,Tignapoloan,1,7500,Rural,38.50
+27,Besigan,1,4200,Rural,52.10
+28,Barangay 1,2,168,Urban,0.05
+29,Barangay 40,2,350,Urban,0.08
+30,Tumpagon,1,2800,Rural,41.30
