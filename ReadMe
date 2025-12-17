@@ -1,0 +1,70 @@
+# Python Mini Projects - Study Repository
+
+A collection of mini projects created for learning and practicing Python programming concepts, with a focus on NumPy and data manipulation.
+
+## 📚 About
+
+This repository serves as a learning playground where I build small Python projects to strengthen my programming skills and explore various libraries and frameworks. Each project is designed to tackle specific concepts or solve practical problems.
+
+## 🚀 Projects
+
+### 1. Grade Analyzer
+**File:** `grade-analyzer.py`  
+A tool for analyzing student grades with statistical computations.
+
+### 2. RGB Color Utility
+**File:** `rgb_color.py`  
+A utility for working with RGB color values and conversions.
+
+## 🛠️ Technologies & Libraries
+
+- Python 3.x
+- NumPy
+- Other dependencies listed in `requirements.txt`
+
+## 📦 Installation
+
+1. Clone this repository:
+   ```bash
+   git clone <repository-url>
+   cd numpy_projects
+   ```
+
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv .venv
+   .venv\Scripts\activate  # On Windows
+   source .venv/bin/activate  # On macOS/Linux
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## 💡 Usage
+
+Each project can be run independently. Navigate to the project directory and execute:
+
+```bash
+python <project-file>.py
+```
+
+## 📈 Learning Goals
+
+- Master Python fundamentals
+- Explore data manipulation with NumPy
+- Practice problem-solving through coding
+- Build a portfolio of practical mini projects
+
+## 🤝 Contributing
+
+This is a personal learning repository, but suggestions and feedback are always welcome!
+
+## 📝 License
+
+This project is open source and available for educational purposes.
+
+---
+
+*Last updated: December 2025*
