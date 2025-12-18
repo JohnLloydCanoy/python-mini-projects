@@ -16,23 +16,20 @@ try :
     df = pd.read_csv("movie_metadata.csv")
     if choice == 1:
         top_rated = df.sort_values(by="imdb_score", ascending=False).head(10)
-        print("Top Rated Movies:")
-        colum_to_show = ['movie_title', 'imdb_score', 'title_year']
-        print(top_rated[colum_to_show].to_string(index=False))
         sns.barplot(y='imdb_score', x='movie_title', data=top_rated, palette='viridis')
         plt.show()
     elif choice == 2:
         genre = input("Enter the genre you are interested in (e.g., Action, Comedy, Drama): ")
         genre_movies = df[df['genres'].str.contains(genre, case=False, na=False)]
-        print(f"Movies in Genre '{genre}':")
-        for index, row in genre_movies.iterrows():
-            print(f"{row['movie_title'].strip()} - Genres: {row['genres']}")
+        sns.countplot(y='movie_title', data=genre_movies, order=genre_movies['movie_title'].value_counts().index, palette='coolwarm')
+        plt.show()
     elif choice == 3:
         year = input("Enter the release year you are interested in (e.g., 2000, 2010): ")
-        year_movies = df[df['title_year'] == int(year)]
-        print(f"Movies released in the year {year}:")
-        for index, row in year_movies.iterrows():
-            print(f"{row['movie_title'].strip()} - Year: {row['title_year']}")
+        year_movies = df[df['title_year'] == int(year)] # ading limit to year input 
+        year_movies = year_movies.sort_values(by="imdb_score", ascending=False).head(10)
+        sns.countplot(y='movie_title', data=year_movies, order=year_movies['movie_title'].value_counts().index, palette='magma')
+        
+        plt.show()
     elif choice == 4:
         print("Exiting the Movie Analyzer. Goodbye!")
         exit()
