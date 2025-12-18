@@ -21,7 +21,10 @@ try :
     elif choice == 2:
         genre = input("Enter the genre you are interested in (e.g., Action, Comedy, Drama): ")
         genre_movies = df[df['genres'].str.contains(genre, case=False, na=False)]
+        # adding limit to genre input
+        genre_movies = genre_movies.sort_values(by="imdb_score", ascending=False).head(10)
         sns.countplot(y='movie_title', data=genre_movies, order=genre_movies['movie_title'].value_counts().index, palette='coolwarm')
+        plt.xticks(rotation=45, ha='right')
         plt.show()
     elif choice == 3:
         year = input("Enter the release year you are interested in (e.g., 2000, 2010): ")
