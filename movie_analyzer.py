@@ -1,5 +1,9 @@
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
+g = plt.subplots_adjust(left=0.2, right=0.8) 
+g= plt.xticks(rotation=45, ha='right')
 
 
 input ("Hello this is a  trial system that filter what you want to knwo next movie \n based on your prefrences \n Press Enter to continue: ")
@@ -15,7 +19,8 @@ try :
         print("Top Rated Movies:")
         colum_to_show = ['movie_title', 'imdb_score', 'title_year']
         print(top_rated[colum_to_show].to_string(index=False))
-            
+        sns.barplot(y='imdb_score', x='movie_title', data=top_rated, palette='viridis')
+        plt.show()
     elif choice == 2:
         genre = input("Enter the genre you are interested in (e.g., Action, Comedy, Drama): ")
         genre_movies = df[df['genres'].str.contains(genre, case=False, na=False)]
